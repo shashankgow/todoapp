@@ -1,0 +1,15 @@
+$container-width-of-an-input-field: 50px;
+$container-height-of-an-input-field: 15px;
+
+#delete,
+#pending,
+#complete {
+  display: none;
+}
+.demo:hover {
+  #delete,
+  #pending,
+  #complete {
+    display: inline !important;
+  }
+}

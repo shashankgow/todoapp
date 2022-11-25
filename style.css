@@ -1,0 +1,13 @@
+#delete,
+#pending,
+#complete {
+  display: none;
+}
+
+.demo:hover #delete,
+.demo:hover #pending,
+.demo:hover #complete {
+  display: inline !important;
+}
+
+/*# sourceMappingURL=style.css.map */

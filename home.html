@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="background bg-secondary container rounded mt-5 p-3">
+          <section class="align-self-center">
+            <form action="" id="addTodoForm">
+              <div class="form-group d-flex">
+                <input type="text rounded " style="width: 100%" id="addTodo" />
+                <button
+                  type="submit"
+                  id="push"
+                  class="alert ml-auto bg-primary"
+                  data-dismiss="alert"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">Add task</span>
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+        <section class="list container bg-secondary rounded mt-5">
+          <div id="task1"></div>
+          <div class="container" id="tasks">
+            <ul id="task" type="none" class="userinterface"></ul>
+          </div>
+        </section>
+        <div class=" container d-flex">
+          <section class="bg-success">
+            <h1>completed</h1>
+            <ul id="com" type="none"></ul>
+          </section>
+          <section class="mx-auto bg-warning">
+            <h1>pending</h1>
+            <ul id="pen" type="none"></ul>
+          </section>
+        </div>
+        
+        <section class="container mt-3">
+          <button type="submit" onclick="deleteall()" class="btn btn-danger btn-lg btn-block position-static">
+            Delete All
+          </button>
+        </section>
+      </section>
+    </main>
+  </body>
+  <script src="./index.js"></script>
+</html>
